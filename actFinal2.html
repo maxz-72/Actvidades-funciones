@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let x = 0
+        let j = 0
+        let numero = 0
+        let suma = 0
+        function verificarNumero(){
+            do {
+                numero = parseInt(prompt('Ingrese un número'))
+                if (numero < 0) {
+                alert('El número ingresado es incorrecto, vuelva a intentar')
+                }
+            }while (numero <= 0)   
+        }
+
+        function numerosPares(){
+            console.log(`numeros pares de 1 hasta ${numero} :`)
+            for (let i = 1; i <= numero; i++){
+                if(i % 2 == 0){
+                console.log(i)
+                }        
+            }
+        }
+
+        function numerosImpares(){
+            console.log(`numeros impares de 1 hasta ${numero} :`)
+            while(j <= numero){
+                if(j % 2 != 0){
+                    console.log(j);
+                }
+            j++;
+            }
+        }
+
+        function sumaPares(){
+            do {
+                if(x % 2 == 0){
+                    suma = suma + x
+                }
+            x++;
+            }while (x <= numero)
+        console.log('La suma de numeros pares es de: '+suma)
+        }
+        function ejecturar(){
+            verificarNumero()
+            numerosPares()
+            numerosImpares()
+            sumaPares()
+        }
+        
+        ejecturar()
+        
+
+    </script>
+</body>
+</html>
